@@ -1,0 +1,9 @@
+.env
+*.heic
+.DS_Store
+__pycache__/
+.claude/
+
+# Scraped/generated data — not for public repo, keep folder structure only
+outputs/*/*
+!outputs/*/.gitkeep

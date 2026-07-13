@@ -1,0 +1,33 @@
+# Cibles lead gen — modifier ici, jamais dans les scripts.
+# Chaque run de lane B lit ce fichier.
+
+market:
+  primary_country: GR
+  language_hints: [el, en]
+
+segments:
+  - id: real-estate
+    label: "Agences immobilières"
+    priority: 1
+    query_terms:
+      - "real estate agency"
+      - "μεσιτικό γραφείο"        # agence immo en grec
+    notes: "Segment principal (entouré 2x sur le whiteboard de Leon)"
+
+  - id: civil-eng
+    label: "Ingénieurs civils"
+    priority: 2
+    query_terms:
+      - "civil engineer office"
+      - "πολιτικός μηχανικός"
+    notes: "Phase 2 — après validation du segment real-estate"
+
+cities:
+  - name: Athens
+    country: GR
+    priority: 1
+  # Ajouter villes ici quand Leon précise (Thessaloniki? autres pays EU?)
+
+goals:
+  contacts_per_batch: 44
+  emails_target: 100
