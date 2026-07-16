@@ -7,3 +7,6 @@ __pycache__/
 # Scraped/generated data — not for public repo, keep folder structure only
 outputs/*/*
 !outputs/*/.gitkeep
+
+# Leon's raw working files (task drafts, real business data, downloaded video) — not for public repo
+To_Help/

@@ -1,0 +1,43 @@
+{
+  "_comment": "SCHEMA EXAMPLE — not real content. Claude generates the real email_content_by_group.json (one entry per group, ~12-15) after reading the real Leon Architect Group website. generate_campaign.py consumes exactly this shape.",
+  "groups": [
+    {
+      "group_id": 3,
+      "group_name": "Μεσίτες και μεσιτικά γραφεία",
+      "filename": "03_real_estate_agents.html",
+      "mailchimp_tag": "GROUP_REAL_ESTATE",
+      "subject_a": "Τεχνική υποστήριξη για τα ακίνητα του χαρτοφυλακίου σας",
+      "subject_b": "Μια ιδέα συνεργασίας για τους πελάτες σας",
+      "preheader": "Leon Architect Group — τεχνικό γραφείο από το 1964",
+      "headline": "Ένα ακίνητο που παρουσιάζεται σωστά, πουλάει πιο εύκολα",
+      "opening": "Σας γράφω γιατί ένα ακίνητο σε καλή τεχνική κατάσταση και με σωστή παρουσίαση κλείνει ευκολότερα μια συμφωνία.",
+      "collaboration_text": "Είμαστε το Leon Architect Group, τεχνικό και κατασκευαστικό γραφείο με ιστορία από το 1964, με εξειδίκευση και στην ανάδειξη ακινήτων.",
+      "benefit_1": "Τεχνικός προέλεγχος και αξιολόγηση δυνατοτήτων αξιοποίησης ακινήτου.",
+      "benefit_2": "Ανακαίνιση πριν από πώληση ή μίσθωση, με σαφή προϋπολογισμό.",
+      "benefit_3": "Φωτορεαλιστικά 3D, επαγγελματική φωτογραφία και παρουσίαση 360°.",
+      "cta_text": "Θα είχε ενδιαφέρον μία σύντομη τηλεφωνική επικοινωνία, ώστε να δούμε αν υπάρχει πεδίο συνεργασίας στα ακίνητα του χαρτοφυλακίου σας;",
+      "cta_url": "https://leonarchitectgroup.com/contact/",
+      "hero_image_url": "{{HERO_IMAGE_URL_GROUP_3}}",
+      "hero_image_alt": "Ανακαινισμένο ακίνητο προς πώληση — Leon Architect Group"
+    },
+    {
+      "group_id": 12,
+      "group_name": "Ιατρεία και επαγγελματίες υγείας",
+      "filename": "12_medical_professionals.html",
+      "mailchimp_tag": "GROUP_MEDICAL",
+      "subject_a": "Σχεδιασμός επαγγελματικού ιατρικού χώρου",
+      "subject_b": "Ανακαίνιση ιατρείου με σωστή τεχνική μελέτη",
+      "preheader": "Leon Architect Group — τεχνικό γραφείο από το 1964",
+      "headline": "Σχεδιασμός και ανακαίνιση επαγγελματικού χώρου υγείας",
+      "opening": "Σας γράφω γιατί ο χώρος ενός ιατρείου επηρεάζει άμεσα την εμπειρία του ασθενή και τη λειτουργικότητα της καθημερινής σας δουλειάς.",
+      "collaboration_text": "Είμαστε το Leon Architect Group, τεχνικό και κατασκευαστικό γραφείο με ιστορία από το 1964, με εμπειρία σε επαγγελματικούς χώρους υγείας.",
+      "benefit_1": "Λειτουργική διαρρύθμιση σύμφωνα με τις ανάγκες του ιατρείου.",
+      "benefit_2": "Οικοδομικές και λειτουργικές άδειες, προσβασιμότητα.",
+      "benefit_3": "Παρουσίαση των νέων εγκαταστάσεων σε πελάτες/ασθενείς.",
+      "cta_text": "Θα είχε ενδιαφέρον μία σύντομη τηλεφωνική επικοινωνία, ώστε να δούμε αν υπάρχει πεδίο συνεργασίας;",
+      "cta_url": "https://leonarchitectgroup.com/contact/",
+      "hero_image_url": "{{HERO_IMAGE_URL_GROUP_12}}",
+      "hero_image_alt": "Ανακαίνιση επαγγελματικού ιατρικού χώρου — Leon Architect Group"
+    }
+  ]
+}

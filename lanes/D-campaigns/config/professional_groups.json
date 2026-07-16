@@ -1,0 +1,110 @@
+{
+  "_comment": "15 canonical professional groups for Leon Architect Group's cold email campaigns. Source: TASK.md (Leon's whiteboard, run of 2026-07-16). Reuse as-is instead of regenerating each run — avoids drift and inconsistencies between campaigns.",
+  "groups": [
+    {
+      "group_id": 1,
+      "mailchimp_tag": "GROUP_LAWYERS",
+      "label_el": "Δικηγόροι και δικηγορικά γραφεία",
+      "keywords_match": ["δικηγόρ", "lawyer", "law firm", "νομικ"],
+      "collaboration_angle": "τεχνικός έλεγχος ακινήτου, πολεοδομικός έλεγχος, υποστήριξη Golden Visa, αμοιβαία παραπομπή πελατών"
+    },
+    {
+      "group_id": 2,
+      "mailchimp_tag": "GROUP_NOTARIES",
+      "label_el": "Συμβολαιογράφοι",
+      "keywords_match": ["συμβολαιογράφ", "notary", "notair"],
+      "collaboration_angle": "προετοιμασία τεχνικού φακέλου μεταβίβασης, βεβαιώσεις μηχανικού, αποτυπώσεις"
+    },
+    {
+      "group_id": 3,
+      "mailchimp_tag": "GROUP_REAL_ESTATE",
+      "label_el": "Μεσίτες και μεσιτικά γραφεία",
+      "keywords_match": ["μεσίτ", "real estate agen", "μεσιτικό"],
+      "collaboration_angle": "τεχνικός προέλεγχος, ανακαίνιση πριν πώληση/μίσθωση, 3D renderings, φωτογραφία, drone, virtual tour"
+    },
+    {
+      "group_id": 4,
+      "mailchimp_tag": "GROUP_PROPERTY_MANAGERS",
+      "label_el": "Property managers και διαχειριστές ακινήτων",
+      "keywords_match": ["property manag", "διαχειρ", "airbnb", "facility manag"],
+      "collaboration_angle": "τεχνική υποστήριξη χαρτοφυλακίου, συντήρηση, αναβάθμιση επενδυτικών/τουριστικών ακινήτων"
+    },
+    {
+      "group_id": 5,
+      "mailchimp_tag": "GROUP_GOLDEN_VISA",
+      "label_el": "Golden Visa, relocation και επενδυτικοί σύμβουλοι",
+      "keywords_match": ["golden visa", "relocation", "επενδυτικ"],
+      "collaboration_angle": "τεχνικό due diligence, πολεοδομικός έλεγχος, παρουσίαση ακινήτων σε επενδυτές"
+    },
+    {
+      "group_id": 6,
+      "mailchimp_tag": "GROUP_DEVELOPERS",
+      "label_el": "Developers και επενδυτικές εταιρείες ακινήτων",
+      "keywords_match": ["developer", "ανάπτυξη ακινήτ", "investment"],
+      "collaboration_angle": "έλεγχος οικοδομησιμότητας, αρχιτεκτονική μελέτη, κατασκευή, 3D παρουσίαση επενδυτικών προτάσεων"
+    },
+    {
+      "group_id": 7,
+      "mailchimp_tag": "GROUP_ARCHITECTS",
+      "label_el": "Αρχιτέκτονες και επαγγελματίες σχεδιασμού",
+      "keywords_match": ["αρχιτέκτ", "architect", "interior design", "landscape"],
+      "collaboration_angle": "κοινή ανάληψη έργων, φωτορεαλιστικές παρουσιάσεις, κατασκευαστική υλοποίηση"
+    },
+    {
+      "group_id": 8,
+      "mailchimp_tag": "GROUP_ENGINEERS",
+      "label_el": "Μηχανικοί, τοπογράφοι και τεχνικοί σύμβουλοι",
+      "keywords_match": ["μηχανικ", "engineer", "τοπογράφ", "surveyor"],
+      "collaboration_angle": "κοινή ανάληψη μελετών, τοπογραφικά, στατικές/ηλεκτρομηχανολογικές μελέτες, οικοδομικές άδειες"
+    },
+    {
+      "group_id": 9,
+      "mailchimp_tag": "GROUP_CONSTRUCTION",
+      "label_el": "Κατασκευαστικές εταιρείες, εργολάβοι και συνεργεία",
+      "keywords_match": ["κατασκευαστικ", "εργολάβ", "construction", "contractor"],
+      "collaboration_angle": "κοινή ανάληψη έργων, υπεργολαβίες, οικοδομικές άδειες, κοινές οικονομικές προσφορές"
+    },
+    {
+      "group_id": 10,
+      "mailchimp_tag": "GROUP_SUPPLIERS",
+      "label_el": "Προμηθευτές και showrooms υλικών",
+      "keywords_match": ["πλακίδι", "είδη υγιειν", "κούφωμα", "showroom", "furniture", "έπιπλα"],
+      "collaboration_angle": "προδιαγραφή προϊόντων σε έργα, κοινές παρουσιάσεις λύσεων, 3D με πραγματικά προϊόντα"
+    },
+    {
+      "group_id": 11,
+      "mailchimp_tag": "GROUP_HOSPITALITY",
+      "label_el": "Ξενοδοχεία, τουριστικά καταλύματα και εστίαση",
+      "keywords_match": ["ξενοδοχεί", "hotel", "εστιατόρι", "restaurant", "café", "καφέ"],
+      "collaboration_angle": "αρχιτεκτονικός ανασχεδιασμός, λειτουργική αναβάθμιση, 3D, φωτογραφία, drone, virtual tour"
+    },
+    {
+      "group_id": 12,
+      "mailchimp_tag": "GROUP_MEDICAL",
+      "label_el": "Ιατρεία και επαγγελματίες υγείας",
+      "keywords_match": ["ιατρ", "οδοντίατρ", "doctor", "dentist", "φαρμακεί", "κτηνίατρ"],
+      "collaboration_angle": "σχεδιασμός και ανακαίνιση επαγγελματικού χώρου, προσβασιμότητα, λειτουργικές άδειες"
+    },
+    {
+      "group_id": 13,
+      "mailchimp_tag": "GROUP_WELLNESS_EDUCATION",
+      "label_el": "Ευεξία, άθληση, αισθητική και εκπαίδευση",
+      "keywords_match": ["γυμναστήρι", "yoga", "pilates", "spa", "wellness", "σχολ", "φροντιστήρι"],
+      "collaboration_angle": "σχεδιασμός νέου χώρου, βελτίωση εμπειρίας πελάτη, φωτορεαλιστική παρουσίαση"
+    },
+    {
+      "group_id": 14,
+      "mailchimp_tag": "GROUP_MARKETING",
+      "label_el": "Marketing, branding και επιχειρηματικοί σύμβουλοι",
+      "keywords_match": ["marketing", "branding", "διαφημιστικ", "consultant"],
+      "collaboration_angle": "σύνδεση εταιρικής ταυτότητας και φυσικού χώρου, αρχιτεκτονική φωτογραφία, 3D περιεχόμενο"
+    },
+    {
+      "group_id": 15,
+      "mailchimp_tag": "GROUP_INSTITUTIONS",
+      "label_el": "Θεσμικοί φορείς και οργανισμοί",
+      "keywords_match": ["δήμος", "municipality", "τράπεζ", "bank", "οργανισμ"],
+      "collaboration_angle": "τεχνικές μελέτες, τεκμηρίωση κτιρίων, ανακαινίσεις, ενεργειακές αναβαθμίσεις"
+    }
+  ]
+}
