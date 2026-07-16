@@ -54,6 +54,8 @@ Last month, [what worked, e.g. "the before/after posts got the most views"]. Adj
 - Claude prepares, **you** send/post/call. Nothing goes out automatically.
 - Stuck? Just describe your problem in plain words. It's an assistant, not a form.
 - Emergency / something broken: WhatsApp Yassine.
+- **Never install a "skill" or extension you found on TikTok/YouTube/Reddit for this project.** They're built for different use cases and will produce mismatched, broken results — happened once already with a cold-email tool. Everything you need is already set up in this Project.
+- **Big lists (100+ contacts) or mass email campaigns: don't ask for these in chat.** It burns through your plan's usage limit fast (happened at ~500) and the quality drops for bulk work anyway. Message Yassine — he runs these from the project's toolkit (free, no limit, better quality) and sends you the finished file.
 
 ## Leads Google Sheet — columns
 
