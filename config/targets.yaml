@@ -1,5 +1,5 @@
-# Cibles lead gen — modifier ici, jamais dans les scripts.
-# Chaque run de lane B lit ce fichier.
+# Lead-gen targets — edit here, never in the scripts.
+# Every lane B run reads this file.
 
 market:
   primary_country: GR
@@ -7,27 +7,37 @@ market:
 
 segments:
   - id: real-estate
-    label: "Agences immobilières"
+    label: "Real estate agencies"
     priority: 1
     query_terms:
       - "real estate agency"
-      - "μεσιτικό γραφείο"        # agence immo en grec
-    notes: "Segment principal (entouré 2x sur le whiteboard de Leon)"
+      - "μεσιτικό γραφείο"        # real estate agency, in Greek
+    notes: "Primary segment (circled twice on Leon's whiteboard)"
 
   - id: civil-eng
-    label: "Ingénieurs civils"
+    label: "Civil engineers"
     priority: 2
     query_terms:
       - "civil engineer office"
       - "πολιτικός μηχανικός"
-    notes: "Phase 2 — après validation du segment real-estate"
+    notes: "Phase 2 — after the real-estate segment is validated"
 
 cities:
   - name: Athens
     country: GR
     priority: 1
-  # Ajouter villes ici quand Leon précise (Thessaloniki? autres pays EU?)
+  - name: Thessaloniki
+    country: GR
+    priority: 2
+  - name: Patras
+    country: GR
+    priority: 3
+  - name: Heraklion
+    country: GR
+    priority: 3
+  # Add more cities/EU countries here once Leon specifies
 
 goals:
   contacts_per_batch: 44
   emails_target: 100
+  volume_target: 1000  # long-term goal (Leon's message from 2026-07-13)
