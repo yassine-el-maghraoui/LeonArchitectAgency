@@ -1,12 +1,12 @@
-"""Vérification email gratuite: syntaxe + enregistrement MX du domaine.
+"""Free email verification: syntax + domain MX record.
 
-Pas une vérification SMTP complète (ça, c'est ZeroBounce/NeverBounce, payant),
-mais élimine domaines morts et typos — suffisant pour une v1.
+Not a full SMTP verification (that's ZeroBounce/NeverBounce, paid), but it
+weeds out dead domains and typos — good enough for a v1.
 
 Usage:
     python3 verify_mx.py outputs/leads/2026-07-10_..._enriched.csv
 
-Sortie: même fichier avec suffixe _verified.csv, colonne + email_status
+Output: same file with a _verified.csv suffix, column + email_status
 (valid_mx | no_mx | bad_syntax | empty)
 """
 
@@ -42,7 +42,7 @@ def main() -> None:
     with args.csv_file.open(newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     if not rows:
-        sys.exit("CSV vide.")
+        sys.exit("Empty CSV.")
 
     cache: dict = {}
     for row in rows:
@@ -57,7 +57,7 @@ def main() -> None:
             row["email_status"] = "no_mx"
 
     valid = sum(1 for r in rows if r["email_status"] == "valid_mx")
-    print(f"{valid}/{len(rows)} emails avec MX valide")
+    print(f"{valid}/{len(rows)} emails with a valid MX")
 
     out = args.csv_file.with_name(args.csv_file.stem.replace("_enriched", "") + "_verified.csv")
     write_csv(out, rows, list(rows[0].keys()))

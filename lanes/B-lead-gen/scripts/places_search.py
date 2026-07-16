@@ -1,11 +1,11 @@
-"""Cherche des entreprises via Google Places API (New) et sort un CSV.
+"""Search businesses via the Google Places API (New) and write a CSV.
 
 Usage:
     python3 places_search.py --query "real estate agency" --city Athens --country GR
     python3 places_search.py --query "μεσιτικό γραφείο" --city Athens --country GR --max 60
 
-Sortie: outputs/leads/YYYY-MM-DD_<slug>.csv
-Colonnes: name, address, phone, website, google_maps_url, rating, reviews
+Output: outputs/leads/YYYY-MM-DD_<slug>.csv
+Columns: name, address, phone, website, google_maps_url, rating, reviews
 """
 
 import argparse
@@ -64,15 +64,15 @@ def search(api_key: str, query: str, max_results: int) -> list[dict]:
         page_token = data.get("nextPageToken")
         if not page_token:
             break
-        time.sleep(1)  # le token de pagination met ~1s à devenir valide
+        time.sleep(1)  # the page token takes ~1s to become valid
     return rows[:max_results]
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--query", required=True, help='ex: "real estate agency"')
-    parser.add_argument("--city", required=True, help="ex: Athens")
-    parser.add_argument("--country", default="GR", help="code pays, ex: GR")
+    parser.add_argument("--query", required=True, help='e.g. "real estate agency"')
+    parser.add_argument("--city", required=True, help="e.g. Athens")
+    parser.add_argument("--country", default="GR", help="country code, e.g. GR")
     parser.add_argument("--max", type=int, default=60, dest="max_results")
     args = parser.parse_args()
 

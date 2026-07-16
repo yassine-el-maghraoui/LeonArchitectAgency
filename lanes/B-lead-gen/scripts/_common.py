@@ -1,4 +1,4 @@
-"""Helpers partagés par les scripts de lane B. Stdlib uniquement."""
+"""Shared helpers for the lane B scripts. Stdlib only."""
 
 import csv
 import os
@@ -11,7 +11,7 @@ OUTPUT_DIR = REPO_ROOT / "outputs" / "leads"
 
 
 def load_env() -> None:
-    """Charge .env du repo root dans os.environ (sans écraser l'existant)."""
+    """Load .env from the repo root into os.environ (without overwriting existing values)."""
     env_file = REPO_ROOT / ".env"
     if not env_file.exists():
         return
@@ -27,7 +27,7 @@ def require_key(name: str) -> str:
     load_env()
     value = os.environ.get(name, "")
     if not value:
-        sys.exit(f"Erreur: {name} manquant. Copier .env.example vers .env et remplir.")
+        sys.exit(f"Error: {name} missing. Copy .env.example to .env and fill it in.")
     return value
 
 
@@ -41,4 +41,4 @@ def write_csv(path: Path, rows: list[dict], fieldnames: list[str]) -> None:
         writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(rows)
-    print(f"{len(rows)} lignes -> {path}")
+    print(f"{len(rows)} rows -> {path}")

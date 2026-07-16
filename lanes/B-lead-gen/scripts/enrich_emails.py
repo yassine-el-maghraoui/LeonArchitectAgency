@@ -1,15 +1,15 @@
-"""Enrichit un CSV de places_search.py avec des emails.
+"""Enrich a places_search.py CSV with emails.
 
-Deux sources, dans l'ordre:
-1. Scrape léger du site web de l'agence (gratuit, illimité): pages /, /contact, etc.
-2. Hunter.io domain-search si HUNTER_API_KEY présent (free tier: 25 recherches/mois)
-   — utilisé seulement pour les domaines où le scrape n'a rien trouvé, --hunter pour activer.
+Two sources, in order:
+1. Light scrape of the agency's website (free, unlimited): /, /contact, etc.
+2. Hunter.io domain-search if HUNTER_API_KEY is set (free tier: 25 searches/month)
+   — only used for domains where the scrape found nothing, pass --hunter to enable.
 
 Usage:
     python3 enrich_emails.py outputs/leads/2026-07-10_real-estate-agency-athens.csv
-    python3 enrich_emails.py <fichier.csv> --hunter
+    python3 enrich_emails.py <file.csv> --hunter
 
-Sortie: même fichier avec suffixe _enriched.csv, colonnes + email, email_source
+Output: same file with an _enriched.csv suffix, columns + email, email_source
 """
 
 import argparse
@@ -49,7 +49,7 @@ def scrape_site(website: str) -> str:
             if not e.lower().endswith((".png", ".jpg", ".svg", ".webp", ".gif"))
         ]
         if emails:
-            # préférer info@/contact@ si présent, sinon premier trouvé
+            # prefer info@/contact@ if present, otherwise the first one found
             for e in emails:
                 if e.lower().startswith(("info@", "contact@", "sales@")):
                     return e
@@ -79,18 +79,18 @@ def domain_of(website: str) -> str:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("csv_file", type=Path)
-    parser.add_argument("--hunter", action="store_true", help="fallback Hunter.io (quota 25/mois)")
+    parser.add_argument("--hunter", action="store_true", help="Hunter.io fallback (25/month quota)")
     args = parser.parse_args()
 
     load_env()
     hunter_key = os.environ.get("HUNTER_API_KEY", "") if args.hunter else ""
     if args.hunter and not hunter_key:
-        sys.exit("--hunter demandé mais HUNTER_API_KEY absent de .env")
+        sys.exit("--hunter requested but HUNTER_API_KEY missing from .env")
 
     with args.csv_file.open(newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     if not rows:
-        sys.exit("CSV vide.")
+        sys.exit("Empty CSV.")
 
     hunter_used = 0
     for i, row in enumerate(rows, 1):
@@ -111,7 +111,7 @@ def main() -> None:
         print(f"[{i}/{len(rows)}] {row.get('name', '?')}: {row['email'] or '—'}")
 
     found = sum(1 for r in rows if r["email"])
-    print(f"\n{found}/{len(rows)} emails trouvés (Hunter appelé {hunter_used}x)")
+    print(f"\n{found}/{len(rows)} emails found (Hunter called {hunter_used}x)")
 
     out = args.csv_file.with_name(args.csv_file.stem + "_enriched.csv")
     fieldnames = list(rows[0].keys())

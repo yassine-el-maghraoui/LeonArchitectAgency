@@ -1,26 +1,26 @@
 # Lane C — Social Media (S.M.)
 
-Objectif whiteboard: pipeline contenu multi-plateforme (TikTok, Pinterest, YouTube, …) — batch de ~15 contenus → post → analyse → replan.
+Whiteboard goal: multi-platform content pipeline (TikTok, Pinterest, YouTube, …) — batch of ~15 pieces of content → post → analyze → replan.
 
-## Pipeline (mensuel)
+## Pipeline (monthly)
 
-1. **Calendrier** — Claude génère calendrier 15 contenus/mois à partir de:
-   - projets récents de Leon (photos chantier, rendus, avant/après)
-   - patterns gagnants de lane A (ce qui marche chez les concurrents)
-   - Sortie: `outputs/content/YYYY-MM_calendar.md`
-2. **Production textes** — pour chaque contenu: hook, script (si vidéo), caption par plateforme, hashtags. TikTok ≠ Pinterest ≠ YouTube: Claude adapte format/ton par plateforme.
-   - Sortie: `outputs/content/YYYY-MM-DD_<slug>.md`
-3. **Post** — v1 manuel par Leon, ou Buffer free tier (3 comptes, 10 posts programmés/compte).
-4. **Replan** — fin de mois: Leon note ce qui a marché (vues/saves), Claude ajuste le calendrier suivant.
+1. **Calendar** — Claude generates a 15-piece monthly calendar based on:
+   - Leon's recent projects (site photos, renders, before/after)
+   - winning patterns from lane A (what works for competitors)
+   - Output: `outputs/content/YYYY-MM_calendar.md`
+2. **Copy production** — for each piece: hook, script (if video), caption per platform, hashtags. TikTok ≠ Pinterest ≠ YouTube: Claude adapts format/tone per platform.
+   - Output: `outputs/content/YYYY-MM-DD_<slug>.md`
+3. **Post** — v1 is manual by Leon, or Buffer free tier (3 accounts, 10 scheduled posts/account).
+4. **Replan** — end of month: Leon notes what worked (views/saves), Claude adjusts next month's calendar.
 
-## Ce que Claude ne fait PAS en v1
+## What Claude does NOT do in v1
 
-- Pas de génération vidéo/image (les visuels = photos/rendus de Leon, c'est son atout crédibilité).
-- Pas de posting auto via API TikTok/YouTube (accès API restrictif, pas rentable à cette échelle).
+- No video/image generation (visuals = Leon's own photos/renders, that's his credibility asset).
+- No auto-posting via TikTok/YouTube API (restrictive API access, not worth it at this scale).
 
-## Coûts
+## Costs
 
-| Poste | Coût |
+| Item | Cost |
 |---|---|
-| Textes/calendrier | 0€ (sessions Claude) |
-| Buffer free tier | 0€ (3 comptes max — choisir les 3 plateformes prioritaires) |
+| Copy/calendar | $0 (Claude sessions) |
+| Buffer free tier | $0 (3 accounts max — pick the 3 priority platforms) |
